@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Bollu Shiva Kumar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+        }
+        header {
+            background: #161b22;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #58a6ff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .home {
+            text-align: center;
+        }
+        .home h2 {
+            font-size: 2.5rem;
+        }
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #161b22;
+            margin-top: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #58a6ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #1f6feb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bollu Shiva Kumar</h1>
+        <p>Cyber Security Enthusiast | SR University</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section home" id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Exploring the domain of <strong>Cyber Security</strong> with passion and dedication.</p>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>Hello! I am <strong>Bollu Shiva Kumar</strong>, a Cyber Security student at <strong>SR University</strong>. I am passionate about ethical hacking, digital forensics, and securing digital systems. I love learning new tools, technologies, and solving security challenges.</p>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+            <ul>
+                <li>Network Security</li>
+                <li>Web Application Security</li>
+                <li>Linux & Command Line</li>
+                <li>Python for Cyber Security</li>
+                <li>Penetration Testing Tools (Nmap, BurpSuite, Metasploit)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>1. Vulnerability Scanner</h3>
+            <p>A Python-based tool that scans websites for basic vulnerabilities.</p>
+        </div>
+
+        <div class="card">
+            <h3>2. Password Strength Analyzer</h3>
+            <p>A web app that analyzes password strength using JavaScript.</p>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: <strong>your-email@example.com</strong></p>
+            <button onclick="showMessage()">Say Hello</button>
+            <p id="msg"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bollu Shiva Kumar | Cyber Security Portfolio</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").innerText = "Thanks for visiting my portfolio!";
+        }
+    </script>
+</body>
+</html>
